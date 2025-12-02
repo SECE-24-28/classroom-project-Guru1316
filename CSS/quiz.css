@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+#div1{
+    margin: auto;
+    padding: 20px;
+    background-color: blue;
+    border-radius: 8px;
+}
+
+#head1{
+    color: white;
+    text-align: center;
+    border: 3px solid red;
+}
+
+#para1{
+    color: white;
+    text-align: center;
+}
+
+#div2{
+    width: 900px;
+    margin: auto;
+    border: 1px solid;
+    padding: 20px;
+    border-radius: 4px;
+    background-color: white;
+}
+
+.field
+{
+    padding: 10px;
+    background-color: rgb(244, 249, 255);
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+#fixed
+{
+    position: fixed;
+    background-color: blue;
+    bottom: 20px;
+    right: 20px;
+    width: 120px;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+}
+
+#Box
+{
+    background-color: rgb(255, 255, 165);
+    border: 5px solid blue;
+    text-align: justify;
+    padding: 15px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+#Box-Model
+{
+    padding: 20px;
+}
+
+#Box-Heading
+{
+    margin-top: 0;
+    margin-bottom: 0px;
+}
