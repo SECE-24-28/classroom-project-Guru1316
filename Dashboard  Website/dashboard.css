@@ -1,0 +1,117 @@
+*
+{
+    margin: 0;
+}
+
+header{
+    grid-area: header;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+nav{
+    grid-area: navbar;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 80%;
+}
+
+nav p{
+    padding: 3px;
+}
+nav h2{
+    padding-bottom: 4px;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: "header header header" "navbar navbar main";
+    grid-area: "body";
+}
+
+.gridContainer
+{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.item
+{
+    display: flex;
+    background-color: white;
+    border-left: 5px solid blue;
+    color: black;
+    font-size: 24px;
+    height: 50px;
+    width: 300px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border-radius: 4px;
+    font-size: medium;
+}
+#item1
+{
+    display: flex;
+    background-color: white;
+    border-left: 5px solid blue;
+    color: black;
+    font-size: 24px;
+    height: 50px;
+    width: 300px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    border-radius: 4px;
+    font-size: medium;
+}
+
+.gridContainer1
+{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+
+.gridContainer2
+{
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item2
+{
+    display: flex;
+    background-color: white;
+    color: black;
+    font-size: 24px;
+    height: 50px;
+    width: 400px;
+    margin-top: 10px;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: flex-start;
+    align-items: center;
+    justify-items: center;
+    border-radius: 4px;
+    font-size: medium;
+    padding-left: 5px;
+}
