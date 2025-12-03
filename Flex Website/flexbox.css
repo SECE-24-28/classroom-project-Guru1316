@@ -1,0 +1,249 @@
+#head1
+{
+    text-align: center;
+}
+
+.flexContainer1{
+    border: 1px solid black;
+    display: flex;
+    height: 70px;
+}
+
+.flexItem1{
+    height: 60px;
+    width: 60px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    align-content: center;
+    text-align: center;
+    margin: 5px;
+}
+
+.flexContainer2{
+    border: 1px solid black;
+    height: 205px;
+    display:flex;
+    flex-direction: column;
+}
+
+.flexItem2{
+    height: 60px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    margin: 5px;
+    align-content: center;
+    text-align: center;
+}
+
+.flexContainer3{
+    border: 1px solid black;
+    display: flex;
+    height: 70px;
+    justify-content: center;
+}
+
+.flexItem3{
+    height: 60px;
+    width: 60px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    align-content: center;
+    text-align: center;
+    margin: 5px;
+}
+
+.flexContainer4{
+    border: 1px solid black;
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    margin-top: 6px;
+}
+
+.flexItem4{
+    height: 60px;
+    width: 60px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    align-content: center;
+    text-align: center;
+    margin: 5px;
+}
+
+.flexContainer5{
+    border: 1px solid black;
+    height: 205px;
+    display:flex;
+    align-items: center;
+}
+
+.flexItem5{
+    height: 55px;
+    width: 55px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    margin: 5px;
+    align-content: center;
+    text-align: center;
+}
+
+#flex5{
+    height: 80px;
+    width: 55px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    margin: 5px;
+    align-content: center;
+    text-align: center;
+}
+
+.flexContainer6{
+    border: 1px solid black;
+    display: flex;
+    height: 70px;
+    flex-wrap: wrap;
+}
+
+.flexItem6{
+    height: 60px;
+    width: 135px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    margin: 5px;
+    align-content: center;
+    text-align: center;
+}
+
+.flexContainer7{
+    border: 1px solid black;
+    display: flex;
+    height: 70px;
+    gap: 10px;
+}
+
+.flexItem7{
+    height: 60px;
+    width: 60px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    align-content: center;
+    text-align: center;
+    margin: 5px;
+}
+
+.flexContainer9{
+    border: 1px solid black;
+    display: flex;
+    height: 70px;
+}
+
+.flexItem9{
+    height: 60px;
+    width: 135px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    margin: 5px;
+    align-content: center;
+    text-align: center;
+}
+
+.flexContainer10{
+    border: 1px solid black;
+    display: flex;
+    height: 70px;
+}
+
+#flex101{
+    height: 60px;
+    width: 60px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    align-content: center;
+    text-align: center;
+    margin: 5px;
+    flex-basis: 150px;
+}
+
+#flex102{
+    height: 60px;
+    width: 60px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    align-content: center;
+    text-align: center;
+    margin: 5px;
+    flex-basis: auto;
+}
+
+.flexContainer11{
+    border: 1px solid black;
+    display: flex;
+    height: 70px;
+    flex-wrap: wrap;
+}
+
+.flexItem11{
+    height: 60px;
+    width: 60px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    align-content: center;
+    text-align: center;
+    margin: 5px;
+}
+
+.flexContainer12{
+    border: 1px solid black;
+    display: flex;
+    height: 205px;
+    flex-wrap: wrap;
+    justify-items: center;
+}
+
+#flex111{
+    height: 60px;
+    width: 60px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    align-content: center;
+    text-align: center;
+    margin: 5px;
+    align-self: flex-start;
+}
+
+#flex112{
+    height: 60px;
+    width: 60px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    align-content: center;
+    text-align: center;
+    margin: 5px;
+    align-self: center;
+}
+
+#flex113{
+    height: 60px;
+    width: 60px;
+    color: black;
+    border: 1px solid black;
+    background-color: rgb(152, 218, 218);
+    align-content: center;
+    text-align: center;
+    margin: 5px;
+    align-self: flex-end;
+}
