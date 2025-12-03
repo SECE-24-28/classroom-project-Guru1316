@@ -6,7 +6,7 @@
        grid-template-rows: 100px 100px; */
     /* grid-template-colums: 200px 200px 200px 200px; */
     /* grid-template-columns: 100px repeat(4, 200px); */
-    grid-template-columns: repeat(4, 100px);
+    /* grid-template-columns: repeat(4, 100px); */
     /* grid-template-rows: 100px 100px; */
     /* row-gap:10px; */
     /* column-gap:10px; */
@@ -15,26 +15,26 @@
     /* align-content: center; */
 }
 
-.item {
+/* .item {
     color: red;
     border: 1px solid;
     background-color: yellow;
-    /* padding: 30px 40px; */
-}
+    /* padding: 30px 40px; 
+} */
 
-.item:nth-child(1){
+/* .item:nth-child(1){
     /* grid-column-start: 3;
-    grid-column-end: -1; */
-    grid-column: 3/-1;
+    grid-column-end: -1; 
+    grid-column: 3/-1; */
     /* grid-row-start: 2;
-    grid-row-end: 3; */
+    grid-row-end: 3; 
     grid-row: 2/3;
-}
+} */
 
-.item:nth-child(8){
+/* .item:nth-child(8){
     grid-column: 3/4;
     grid-row: 1/2;
-}
+} */
 
 header{
     grid-area: header;
@@ -77,4 +77,73 @@ footer{
     color: yellow;
     border: 1px solid black;
     padding: 10px;
+}
+
+.item
+{
+    background-color: yellow;
+    border: 2px solid red;
+    color: red;
+    font-size: 24px;
+    height: 100px;
+    width: 100px;
+    margin: 20px;
+}
+
+.item:hover
+{
+    transform: translateX(-10px);
+    transform: translateY(-10px);
+    transform: translate3d(10px);
+}
+
+header:hover
+{
+    transform: translateY(10px);
+}
+
+/* 576px less than 576px for mobiles */
+/* 768px between 577px-768px tabs */
+/* 992px between 769px-992px small screens */
+/* 1200px between 993px-1200px normal screens */
+/* 1200px greater tha 1200px for extra large screens */
+
+@media (max-width: 576px)
+{
+    body{
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: "header header header" "navbar main aside" "footer footer footer";
+    }
+    aside
+    {
+        display: none;
+    }
+    .item
+    {
+        font-size: 14px;
+        height: 50px;
+        width: 50px;
+    }
+    main
+    {
+        background-color: red;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 768px){
+    body{
+        grid-template-columns: 3fr 1fr;
+        grid-template-areas: "header header header" "navbar main aside" "footer footer footer";
+    }
+    nav
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px)
+{
+    body{
+        grid-template-areas: "header header header" "aside main navbar" "footer footer footer";
+    }
 }
