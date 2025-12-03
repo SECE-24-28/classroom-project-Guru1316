@@ -52,8 +52,6 @@ nav{
 
 main{
     grid-area: main;
-    background-color: yellow;
-    color: red;
     border: 1px solid black;
 }
 
