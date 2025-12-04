@@ -189,6 +189,10 @@ console.log(arr3);
 arr3.forEach((element, index) => {
     console.log(element, index);
 })
+let bb = arr3.forEach((element, index) => {
+    return element + index;
+})
+console.log(bb);
 
 // Map
 console.log(arr3);
