@@ -203,3 +203,29 @@ console.log(aa);
 
 let aa1 = arr3.map((element, index) => element + index); // Only for single statements
 console.log(aa1);
+
+
+// filter -  For filtering values : Truthy Values
+let arr5 = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log(arr5);
+let arr5e = arr5.filter( (e) =>
+ {
+    return e%2 == 1;
+ })
+ console.log(arr5e);
+ let arr5i = arr5.filter( (e, i) =>
+ {
+    return i>4;
+ })
+ console.log(arr5i);
+
+
+ // reduce - Return a single value 
+ let arr6 = [1, 2, 3, 4, 5, 6, 7, 8];
+console.log(arr6);
+let arr6fo = arr6.reduce( (acc, e, i) =>
+ {
+    console.log(acc, e);
+    return acc + e;
+ }, 200) //  accumulator initialization
+ console.log(arr6fo); //  return a single value after the given operations
