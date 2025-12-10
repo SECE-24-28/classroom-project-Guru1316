@@ -18,7 +18,7 @@ const Counter = ({val, handleIncrement, handleDecrement}) => {
     return(
       <div className='counter'>
         <h1>{val}</h1>
-        <p>{v}</p>
+        {v}
         <ButtonContainer handleIncrement = {handleIncrement} handleDecrement = {handleDecrement}></ButtonContainer>
       </div>
     )
