@@ -9,7 +9,7 @@
   /* background-color: #222; */
 }
 .MainContainer {
-  width: 40%;          /* You can change to 60% or 70% */
+  width: 80%;          /* You can change to 60% or 70% */
   margin: 0 auto;      /* THIS centers everything */
   text-align: center;  /* Center headings + counter */
 }
@@ -26,6 +26,7 @@ body{
   color: white;
 }
 .counter{
+  width: 40%;
   border: 2px solid white;
   margin: 20px auto;
   padding: 30px;

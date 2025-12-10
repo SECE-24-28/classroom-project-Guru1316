@@ -20,6 +20,8 @@ function App() {
   let [val, setVal] = useState(0);
   let [data, setData] = useState([]);
   let [dat, setDat] = useState([]);
+  let [data2, setData2] = useState([]);
+  let [loading, setLoading] = useState(true);
   const handleIncrement = () => {
     console.log("Increment button clicked");
     // val = val + 1;
@@ -101,6 +103,24 @@ useEffect(() => {
 }, [])
 console.log({dat});
 
+useEffect(() => {
+  const FetchApi3 = async() => {
+    try{
+      const response = await fetch("https://jsonplaceholder.typicode.com/users");
+      const jsonData = await response.json();
+      setData2(jsonData);
+      setLoading(false);
+    }
+    catch(err){
+      console.log(err);
+    }
+    finally{
+      
+    }
+  }
+  FetchApi3();
+}, [])
+
   return (
     <div className="App">
       <div className="MainContainer">
@@ -127,11 +147,17 @@ console.log({dat});
           </tr>
         </thead>
         <tbody>
-          {data.map((item) =>{
+          {loading === true ? 
+            <tr>
+              <td colSpan="3">Loading...</td>
+            </tr>
+            :
+          data2.map((item) =>{
             return(
               <TableRow item={item} key={item.id}></TableRow>
             );
-          } )}
+          } )
+        }
         </tbody>
       </table>
       <h1>Titles</h1>
