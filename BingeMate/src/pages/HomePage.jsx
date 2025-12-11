@@ -1,9 +1,20 @@
-import '../App.css'
+import { useOutletContext } from 'react-router-dom';
+import '../styles/home.css';
+import SeriesCard from '../components/SeriesCard';
 
 const Home = () => {
+    const { data } = useOutletContext();
+    
     return(
-        <div className="text">
-            <h1>Home Page</h1>
+        <div className='home'>
+            <h1 className='section-title'>Top Series</h1>
+            <div className='series-grid'>
+                {data.map((series) => {
+                    return(
+                        <SeriesCard key={series.id} series={series}></SeriesCard>
+                    )
+                })}
+            </div>
         </div>
     )
 }

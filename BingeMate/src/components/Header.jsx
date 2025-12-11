@@ -5,7 +5,7 @@ const Header  = () => {
     return(
         <>
         <header className='header'>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS1VegpF5is5X2A4T-tnzhXtXk7zgnUN8Trrw&s" alt="logo"/>
+        <img src="/image.png" alt="logo"/>
         <div className='links'>
           <NavLink to={"/"} >Home</NavLink>
           <NavLink to={"/diary"} >Diary</NavLink>
@@ -15,7 +15,7 @@ const Header  = () => {
           <NavLink to={"/profile"} >Profile</NavLink>
           <NavLink to={"/reviews"} >Reviews</NavLink>
           <NavLink to={"/season"} >Season</NavLink>
-          <NavLink to={"/series/:1"} >Series</NavLink>
+          {/* <NavLink to={"/series"} >Series</NavLink> */}
           <NavLink to={"/settings"} >Settings</NavLink>
           <NavLink to={"/watchlist"} >Watchlist</NavLink>
         </div>
