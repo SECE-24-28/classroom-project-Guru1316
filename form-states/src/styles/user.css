@@ -1,0 +1,20 @@
+.gridContainer
+{
+    border: 3px solid red;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 14px;
+    background-color: rgb(68, 68, 68);
+    display: inline-block;
+}
+.users
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+h1{
+    text-align: center;
+    margin-top: 30px;
+}

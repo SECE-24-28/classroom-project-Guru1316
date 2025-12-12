@@ -1,0 +1,35 @@
+.header {
+  display: flex;
+  border-bottom: 1px solid white;
+  padding: 10px 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+.header img{
+  width: 150px;
+  height: 80px;
+}
+.links
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+.links a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+}
+.links .active{
+  color: orange;
+  font-size: 30px;
+}
+body{
+  background-color: black;
+  color: white;
+}
+.text{
+  margin-left: 10px;
+}

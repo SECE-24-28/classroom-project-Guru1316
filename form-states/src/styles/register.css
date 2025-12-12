@@ -1,0 +1,43 @@
+.forms {
+    text-align: center;
+}
+
+.forms form {
+    width: 40%;
+    margin: 40px auto;
+    padding: 10px;
+    border: 1px solid red;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+    background-color: rgb(82, 82, 82);
+}
+
+.forms input {
+    padding: 10px;
+    font-size: 18px;
+}
+
+.forms label {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.forms button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 10px;
+    background-color: red;
+    color: white;
+    font-size: 24px;
+}
+
+button:hover{
+    background-color: blue;
+}
+
+.title {
+    display: inline-block;
+}

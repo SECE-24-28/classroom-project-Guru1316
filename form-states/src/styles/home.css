@@ -1,0 +1,35 @@
+.table-data
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 40px;
+}
+table, th, td{
+    border: 1px solid white;
+    border-collapse: collapse;
+    border-radius: 12px;
+}
+table {
+    border-radius: 12px;
+}
+th, td{
+    padding: 10px;
+}
+h1{
+    text-align: center;
+}
+.btn-view:hover{
+    background-color: red;
+    cursor: pointer;
+}
+.Add-User
+{
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    
+}
