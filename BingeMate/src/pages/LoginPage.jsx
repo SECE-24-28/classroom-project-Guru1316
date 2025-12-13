@@ -13,7 +13,7 @@ const Login = () => {
       localStorage.setItem("auth", true)
       console.log(email, password);
       alert("Login Successful!");
-      navigate("/");
+      navigate("/home");
     }
     else 
     {

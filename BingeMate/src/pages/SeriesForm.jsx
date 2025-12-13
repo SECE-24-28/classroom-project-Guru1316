@@ -3,24 +3,9 @@ import '../styles/seriesForm.css';
 import { useForm } from 'react-hook-form';
 
 const SeriesForm = () => {
-    // {
-    //   "id": 66732,
-    //   "name": "Stranger Things",
-    //   "poster_path": "/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
-    //   "backdrop_path": "/56v2KjBlU4XaOv9rVYEQypROD7P.jpg",
-    //   "vote_average": 8.6,
-    //   "vote_count": 16161,
-    //   "popularity": 185.5,
-    //   "first_air_date": "2016-07-15",
-    //   "original_language": "en",
-    //   "original_name": "Stranger Things",
-    //   "origin_country": ["US"],
-    //   "genres": ["Sci-Fi & Fantasy", "Mystery", "Drama"],
-    //   "overview": "When a young boy vanishes, a small town uncovers a mystery involving secret experiments, terrifying supernatural forces, and one strange little girl."
-    // }
     const { data, setData } = useOutletContext();
     const navigate = useNavigate();
-    const { register, handleSubmit, /*formState: { errors }*/ } = useForm({
+    const { register, handleSubmit } = useForm({
         defaultValues : {
             "name": "Stranger Things",
             "poster_path": "/49WJfeN0moxb9IPfGn8AIqMGskD.jpg",
@@ -46,11 +31,12 @@ const SeriesForm = () => {
         localStorage.setItem("mySeriesData", JSON.stringify(updatedList));
         console.log(fdata);
         alert("Series Added Successfully");
-        navigate("/");
+        navigate("/home");
     }
 
     return (
         <div className="forms">
+            <button onClick={() => navigate(-1)} className="back-btn">{"<"}---- Back</button>
             <h1 className='title'>Add Series</h1>
             <form onSubmit={handleSubmit(onSubmitHandler)}>
                 <label>Name</label>

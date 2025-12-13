@@ -9,12 +9,17 @@
   width: 150px;
   height: 80px;
 }
+.tit
+{
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
 .links
 {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 40%;
+  gap: 30px;
 }
 .links a {
   color: white;
@@ -32,4 +37,13 @@ body{
 }
 .text{
   margin-left: 10px;
+}
+.mate
+{
+  color: red;
+}
+.name
+{
+  display: inline;
+  cursor: pointer;
 }

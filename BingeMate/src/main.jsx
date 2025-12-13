@@ -20,7 +20,7 @@ const routerVariables = createBrowserRouter([{
   element:<App/>,
   children:[
     {
-      path:"/",
+      path:"/home",
       element: <Home></Home>,
     },
     {
@@ -36,7 +36,7 @@ const routerVariables = createBrowserRouter([{
       element: <ProtectedRoutes> <SeriesForm></SeriesForm> </ProtectedRoutes> ,
     },
     {
-      path:"/login",
+      path:"/",
       element: <Login></Login>,
     },
     {

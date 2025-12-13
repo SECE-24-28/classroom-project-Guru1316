@@ -1,8 +1,12 @@
 import { useState } from 'react';
 import SeriesCard from '../components/SeriesCard';
 import '../styles/home.css'; 
+import { useNavigate } from 'react-router-dom';
 
 const Watchlist = () => {
+
+    const navigate = useNavigate();
+
     const [watchlist, setWatchlist] = useState(() => {
         return JSON.parse(localStorage.getItem("myWatchlist")) || [];
     });
@@ -16,6 +20,7 @@ const Watchlist = () => {
 
     return (
         <div className='home'>
+            <button onClick={() => navigate(-1)} className="back-btn">{"<"}---- Back</button>
             <div className='title-flex'>
                 <h1 className='section-title'>My Watchlist</h1>
                 {watchlist.length > 0 && (<button onClick={clearWatchlist} className='clear-btn'>Clear All</button>)}

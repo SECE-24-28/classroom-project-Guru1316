@@ -4,6 +4,15 @@
     margin: 30px auto;
 }
 
+.series1
+{
+    width: 90%;
+    margin: 30px auto;
+    border: 3px solid red;
+    padding: 30px 30px 0px 30px;
+    border-radius: 5px;
+}
+
 .gridContainer img 
 {
     width: 100%;
@@ -101,10 +110,60 @@
 .back-btn{
     padding: 5px;
     border-radius: 12px;
+    margin-bottom: 20px;
 }
 
 .back-btn:hover
 {
     background-color: red;
     cursor: pointer;
+}
+
+.ds
+{
+    display: flex;
+    gap: 25px;
+    margin-bottom: 30px;
+    padding: 15px;
+    border: 1px solid #444;
+    border-radius: 10px;
+    background-color: #000;
+}
+
+.di
+{
+    width: 150px;
+}
+
+.dim
+{
+    width: 100%;
+    border-radius: 8px; 
+    cursor:pointer;
+}
+
+.dc
+{
+    flex: 1;
+}
+
+.dhh
+{
+    margin-bottom: 10px;
+}
+
+.dpw
+{
+    color: #aaa;
+    margin-bottom: 8px; 
+}
+
+.dpr
+{
+    margin-bottom: 8px;
+}
+
+.dpre
+{
+    line-height: 1.6;
 }

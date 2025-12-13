@@ -12,7 +12,6 @@ const Series = () => {
         return (ele.id === Number(seriesId));
     })
 
-    
     if(!seriesData)
     {
         return(

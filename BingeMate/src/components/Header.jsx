@@ -38,18 +38,30 @@ const Header = () => {
     const handleLogout = () => {
         localStorage.removeItem("auth");
         alert("Logged Out Successfully");
-        navigate("/login");
+        navigate("/");
+    }
+
+    const titleHandler = () => {
+        if(auth === "true")
+        {
+            return(
+                navigate("/home")
+            )
+        }
     }
 
     return (
         <>
             <header className='header'>
+                <div className='tit'>
                 <img src="/image.png" alt="logo" />
+                <h1 className='name' onClick={titleHandler}>Binge <span className='mate'>Mate</span></h1>
+                </div>
                 <div className='links'>
-                    <NavLink to={"/"}>Home</NavLink>
 
                     {auth === "true" && (
                         <>
+                            <NavLink to={"/home"}>Home</NavLink>
                             <NavLink to={"/diary"}>Diary</NavLink>
                             <NavLink to={"/addSeries"}>Add Series</NavLink>
                             {/* <NavLink to={"/reviews"}>Reviews</NavLink> */}
@@ -60,7 +72,10 @@ const Header = () => {
                     {auth === "true" ? (
                         <a onClick={handleLogout} style={{ cursor: "pointer" }}>Logout</a>
                     ) : (
-                        <NavLink to={"/login"}>Login / Register</NavLink>
+                    <>
+                        <NavLink to={"/"}>Login</NavLink>
+                        <NavLink to={"/register"}>Register</NavLink>
+                    </>
                     )}
                 </div>
             </header>
