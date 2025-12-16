@@ -1,0 +1,90 @@
+[
+  {
+    "id": 1,
+    "name": "Aadithya A",
+    "age": 18,
+    "email": "aadithya.a2024cse@sece.ac.in",
+    "password": "24CS001",
+    "college": "Sri Eshwar College Of Engineering"
+  },
+  {
+    "id": 2,
+    "name": "Gugan M R",
+    "age": 18,
+    "email": "gugan.mr2024cse@sece.ac.in",
+    "password": "24CS069",
+    "college": "Sri Eshwar College Of Engineering"
+  },
+  {
+    "id": 3,
+    "name": "Guruprasad K",
+    "age": 18,
+    "email": "guruprasad.k2024cse@sece.ac.in",
+    "password": "24CS070",
+    "college": "Sri Eshwar College Of Engineering"
+  },
+  {
+    "id": 4,
+    "name": "Ahmed Rifaz M",
+    "age": 18,
+    "email": "ahmedrifaz.m2024cse@sece.ac.in",
+    "password": "24CS007",
+    "college": "Sri Eshwar College Of Engineering"
+  },
+  {
+    "id": 5,
+    "name": "Dev Prasath A",
+    "age": 18,
+    "email": "devprasath.a2024cse@sece.ac.in",
+    "password": "24CS046",
+    "college": "Sri Eshwar College Of Engineering"
+  },
+  {
+    "id": 6,
+    "name": "Akshaya Guhan S",
+    "age": 18,
+    "email": "akshayaguhan.s2024cse@sece.ac.in",
+    "password": "24CS013",
+    "college": "Sri Eshwar College Of Engineering"
+  },
+  {
+    "id": 7,
+    "name": "Dharaneesh R S",
+    "age": 18,
+    "email": "dharaneesh.rs2024cse@sece.ac.in",
+    "password": "24CS053",
+    "college": "Sri Eshwar College Of Engineering"
+  },
+  {
+    "id": 8,
+    "name": "Amirtha Varshini N J",
+    "age": 18,
+    "email": "amirthavarshini.nj2024cse@sece.ac.in",
+    "password": "24CS016",
+    "college": "Sri Eshwar College Of Engineering"
+  },
+  {
+    "id": 9,
+    "name": "Abinayaa A",
+    "age": 19,
+    "email": "abinayaa.a2024cse@sece.ac.in",
+    "password": "24CS005",
+    "college": "Sri Eshwar College Of Engineering"
+  },
+  {
+    "id": 10,
+    "name": "Dharsini R S",
+    "age": 21,
+    "email": "dharshini.rs2024cse@sece.ac.in",
+    "password": "24CS054",
+    "college": "Sri Eshwar College Of Engineering"
+  },
+  {
+    "id": 11,
+    "name": "Ajai L",
+    "age": 18,
+    "email": "ajai.l2024cse@sece.ac.in",
+    "password": "24CS10",
+    "college": "Sri Eshwar College Of Engineering"
+  }
+]
