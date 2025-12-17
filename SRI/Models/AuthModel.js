@@ -54,4 +54,4 @@ authSchema.methods.correctPassword=async function(candidatePassword, userPasswor
 }
 
 const Auth = mongoose.model("Auth", authSchema);
-model.exports = Auth;
+module.exports = Auth;
