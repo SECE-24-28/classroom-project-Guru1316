@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const validator = require("validator");
+const bcrypt =  require("bcrypt");
 
 const authSchema = new mongoose.Schema({
     name: {
@@ -25,7 +26,7 @@ const authSchema = new mongoose.Schema({
         minlength: [8, "Password must be greater than 8 characters"],
         select: false,
     },
-    passwordConfirm:{
+    confirmPassword :{
         type: String,
         required: [true, "Please enter correct password"],
         validate:{
@@ -39,3 +40,18 @@ const authSchema = new mongoose.Schema({
 {
     timestamps: true,
 })
+
+authSchema.pre("save", async function(next){
+    if(!this.isModified("password")) return next();
+    this.password = await bcrypt.hash(this.password, 12);
+    this.confirmPassword=undefined;
+    next();
+})
+
+authSchema.methods.correctPassword=async function(candidatePassword, userPassword)
+{
+    return await bcrypt.compare(candidatePassword, userPassword);
+}
+
+const Auth = mongoose.model("Auth", authSchema);
+model.exports = Auth;
